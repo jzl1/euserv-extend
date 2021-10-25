@@ -12,6 +12,7 @@ RUN apk update && \
   rm -rf /var/cache/apk/* && \
   pip install requests beautifulsoup4 && \
   wget "https://raw.githubusercontent.com/jzl1/euserv-extend/main/app.sh" && \
-  wget "https://raw.githubusercontent.com/jzl1/euserv-extend/main/run.sh"
+  wget "https://raw.githubusercontent.com/jzl1/euserv-extend/main/run.sh" && \
+  wget "https://raw.githubusercontent.com/jzl1/euserv-extend/main/main.py"
 
 CMD ["/bin/bash","run.sh"]
